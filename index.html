@@ -2,109 +2,163 @@
 <html>
 <head>
   <title>Rafael Carmona Luque</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/structure.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto|Combo" rel="stylesheet">
+  <link rel="stylesheet" href="css/svg.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Combo|Overlock+SC" rel="stylesheet">
+  <script src="js/canvas.js"></script>
 </head>
 <body>
   <div class="contenedor">
-
     <header>
       <nav>
         <ul>
           <a href="#"><li>HOME<div class="animation-div"></div></li></a>
-          <a href="#"><li>NEWS<div class="animation-div"></div></li></a>
-          <a href="#"><li>ABOUT<div class="animation-div"></div></li></a>
-          <a href="#"><li>CONTACT<div class="animation-div"></div></li></a>
+          <a href="#news"><li>NEWS<div class="animation-div"></div></li></a>
+          <a href="#about"><li>ABOUT<div class="animation-div"></div></li></a>
+          <a href="#contact"><li>CONTACT<div class="animation-div"></div></li></a>
         </ul>
       </nav>
       
-      <h1>THE DOGie</h1>
+      <h1>THE DOGgie</h1>
     </header>
 
     <main>
       <!-- INFORMACION-->
-      <section class="info">
-        <article>
+      <section id="news">
+        <a href="#"><article>
           <img src="img/img1.jpg" alt="Bobby en el campo">
           <h3>The Doggie</h3>
           <p>Doggo ipsum ur givin me a spook vvv fat boi puggo, big ol pupper blep big ol pupper very jealous pupper, 
             maximum borkdrive heckin good boys and girls. Clouds heckin angery woofer super chub heckin good 
             boys and girls pats, blop snoot I am bekom fat fat boi.</p>
-        </article>
+        </article></a>
 
-        <article>
+        <a href="#"><article>
           <img src="img/img2.jpg" alt="Rushy Recien Nacido">
           <h3>The Doggie</h3>
           <p>Doggo ipsum ur givin me a spook vvv fat boi puggo, big ol pupper blep big ol pupper very jealous pupper, 
             maximum borkdrive heckin good boys and girls. Clouds heckin angery woofer super chub heckin good 
             boys and girls pats, blop snoot I am bekom fat fat boi.</p>
-        </article>
+        </article></a>
 
-        <article>
-          <img src="" alt="">
+        <a href="#"><article>
+          <img src="img/img3.jpg" alt="La niebla de rufo">
           <h3>The Doggie</h3>
           <p>Doggo ipsum ur givin me a spook vvv fat boi puggo, big ol pupper blep big ol pupper very jealous pupper, 
             maximum borkdrive heckin good boys and girls. Clouds heckin angery woofer super chub heckin good 
             boys and girls pats, blop snoot I am bekom fat fat boi.</p>
-        </article>
+        </article></a>
+
+        <a href="#"><article>
+          <img src="img/img3.jpg" alt="La niebla de rufo">
+          <h3>The Doggie</h3>
+          <p>Doggo ipsum ur givin me a spook vvv fat boi puggo, big ol pupper blep big ol pupper very jealous pupper, 
+            maximum borkdrive heckin good boys and girls. Clouds heckin angery woofer super chub heckin good 
+            boys and girls pats, blop snoot I am bekom fat fat boi.</p>
+        </article></a>
       </section>
 
       <!-- BARRA LATERAL-->
       <aside>
-        <section>
-          <h3 class="title_file">Archivo</h3>
-          <div class="fila_barra">
-            <div class="cell_archivo">
-              <div class="check_tabla"><input type="checkbox" name="marzo_17">Marzo 17</div>
-              <div class="check_tabla"><input type="checkbox" name="abril_17">Abril 17</div>
-              <div class="check_tabla"><input type="checkbox" name="mayo_17">Mayo 17</div>
-              <div class="check_tabla"><input type="checkbox" name="junio_17">Junio 17</div>
-            </div>
-            <div class="cell_archivo">
-              <div class="check_tabla"><input type="checkbox" name="julio_17">Julio 17</div>
-              <div class="check_tabla"><input type="checkbox" name="agosto_17">Agosto 17</div>
-              <div class="check_tabla"><input type="checkbox" name="septiembre_17">Septiembre 17</div>
-              <div class="check_tabla"><input type="checkbox" name="octubre_17">Octubre 17</div>
-            </div>
-          </div>
+        <section class="info" itemscope itemtype="http://schema.org/PersonalData">
+          <h3>Sobre Mi</h3>
+          <img src="img/avatar.png" alt="Imagen Personal" itemprop="Profile.img">
+          <p itemprop="personal-description">Soy <b>Rafael Carmona Luque</b>, actual estudiante de 
+            Desarrollo de Aplicaciones Web en el I.E.S Gran Capitán de Córdoba. Poseo los estudios de Técnico 
+            en Sistemas Microinformaticos y Redes (SMR) y Técnico Superior de Desarrollo de Aplicaciones 
+            Multiplataforma (DAM).</p>
         </section>
-        <section>
-          <img src="img/publi.png" alt="publicidad_aqui">
-          <img src="img/publi.png" alt="publicidad_aqui">
-          <img src="img/publi.png" alt="publicidad_aqui">
-          <img src="img/publi.png" alt="publicidad_aqui">
+        <section class="adds">
+          <img src="img/adds.jpg" alt="Publicidad">
+          <img src="img/adds.jpg" alt="Publicidad">
+          <img src="img/adds.jpg" alt="Publicidad">
         </section>
       </aside>
     </main>
 
+    <!-- Canvas separador de contenido -->
+    <div class="separador-perro">
+      <canvas id="canvas">
+        No soporta la API de HTML5 de Canvas
+      </canvas>
+    </div>
+
+    <div id="about">
+      <section>
+        <img src="img/family.png" alt="Icono love perros">
+        <p>Pet Food pet supplies gimme five puppy cage food feathers food heel feathers running pet gate walk lazy dog Spike.</p>
+      </section>
+
+      <section>
+        <img src="img/dog-food.png" alt="Icono Aleatorio">
+        <p>Pet Food pet supplies gimme five puppy cage food feathers food heel feathers running pet gate walk lazy dog Spike.</p>
+      </section>
+
+      <section>
+        <img src="img/family.png" alt="Icono love perros">
+        <p>Pet Food pet supplies gimme five puppy cage food feathers food heel feathers running pet gate walk lazy dog Spike.</p>
+      </section>
+
+      <section>
+        <img src="img/dog-food.png" alt="Icono Aleatorio">
+        <p>Pet Food pet supplies gimme five puppy cage food feathers food heel feathers running pet gate walk lazy dog Spike.</p>
+      </section>
+    </div>
+
+    <div id="contact">
+
+        <div class="formulario">
+          <form action="">
+            <h1>Contacta con nosotros:</h1>
+            <span>Nombre:</span>
+            <input type="text" class="input-resize" />
+            <span>Email:</span>
+            <input type="email" class="input-resize" required/>
+            <span>Mensaje:<s</span>
+            <textarea></textarea>
+            <input type="submit" value="Enviar" class="input-button" />
+          </form>
+        </div>
+
+        <div class="mapa">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.2741281476!2d-118.69192670361079!3d34.0201612924074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos+%C3%81ngeles%2C+California%2C+EE.+UU.!5e0!3m2!1ses!2ses!4v1512090658433" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>         
+    </div>
+
     <footer>
-      <h2 class="titulo_footer">Be With You</h2>
+      <h2 class="titulo_footer">DOGgie CREATIONS</h2>
 
       <h3 class="subtitulo_footer">Rafael Carmona Luque</h3>
 
       <section class="social">
         <div class="social_section">
           <img src="img/facebook.png" alt="Facebook">
-          <p>Facebook</p>
         </div>
         <div class="social_section">
           <img src="img/twitter.png" alt="Twitter">
-          <p>Twitter</p>
         </div>
         <div class="social_section">
           <img src="img/linkedin.png" alt="Linkedin">
-          <p>Linkedin</p>
         </div>
         <div class="social_section">
           <img src="img/github.png" alt="Github">
-          <p>Github</p>
         </div>
         <div class="social_section">
           <img src="img/youtube.png" alt="Youtube">
-          <p>Youtube</p>
         </div>
       </section>
     </footer>
+
+    <svg version="1.1" class="iconic iconic-signal" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11.26px" height="8px" viewBox="0 0 11.26 8" enable-background="new 0 0 11.26 8" xml:space="preserve">
+      <path class="iconic-signal-base" d="M6.337,7.247c-0.391-0.391-1.023-0.391-1.414,0l0.708,0.708L6.337,7.247z"/>
+      <g class="iconic-signal-wave">
+        <path class="iconic-signal-wave-inner" fill="none" stroke="#000000" stroke-miterlimit="10" d="M7.62,5.966c-1.098-1.098-2.88-1.098-3.977,0"/>
+        <path class="iconic-signal-wave-middle" fill="none" stroke="#000000" stroke-miterlimit="10" d="M9.31,4.275C7.278,2.244,3.984,2.245,1.952,4.276"/>
+        <path class="iconic-signal-wave-outer" fill="none" stroke="#000000" stroke-miterlimit="10" d="M10.9,2.684c-2.911-2.911-7.629-2.911-10.54,0"/>
+      </g>
+    </svg>
+
   </div>
 </body>
 </html>
